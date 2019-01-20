@@ -1,0 +1,26 @@
+.users {
+
+    &__item {
+        margin-bottom: 62px;
+        position: relative;
+        padding: 57px 64px 39px 120px;
+        box-shadow: 0px 6px 8px rgba(164, 164, 164, 0.213825);
+        border-radius: 3px;
+    }
+
+    &__avatar {
+        width: 85px;
+        position: absolute;
+        left: 0;
+        top: 44px;
+    }
+
+    &__name {
+        font-weight: 700;
+        color: $color-green-two;
+    }
+
+    &__text {
+        line-height: 1.5;
+    }
+}

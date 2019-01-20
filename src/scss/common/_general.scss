@@ -1,0 +1,27 @@
+// General
+
+body {
+    font-family: $font-source-sans;
+    color: $color-grey;
+    font-size: 17px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.container {
+    max-width: 1167px;
+}
+
+.margin-left {
+    margin-left: 120px;
+}
+
+.arrow-icon {
+    font-size: 11px;
+}

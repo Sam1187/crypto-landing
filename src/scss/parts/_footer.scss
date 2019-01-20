@@ -1,0 +1,88 @@
+.footer {
+     
+    &__box {
+        margin-bottom: 15px;
+        padding: 54px 0;
+        background-color: $color-green-light;
+    }
+
+    &__desc {
+        font-size: 30px;
+    }
+
+    &__title {
+        letter-spacing: 1px;
+        color: $color-green-two;
+    }
+
+    &__subtitle {
+        letter-spacing: 1px;
+        color: $color-grey-dark;
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: center;
+        padding: 25px 0 0 89px;
+    }
+
+    &__btn {
+        padding: 8px 26px;
+        font-size: 16px;
+        font-weight: 900;
+        text-transform: uppercase;
+        box-shadow: 0px 2px 4px rgba(100, 100, 100, 0.5);
+        border-radius: 4px;
+    }
+
+    &__logobtn {
+        margin-right: 23px;
+
+        button {
+            background-color: $color-green-two;
+            color: $color-white;
+            
+            
+
+            &:hover {
+                background-color: $color-white;
+                color: $color-green-two;
+                transition: $transition-base;
+            }
+        }
+    }
+
+    &__buybtn {
+         
+        button {
+            background-color: $color-white;
+            color: $color-green-two;
+            
+
+            &:hover {
+                background-color: $color-green-two;
+                color: $color-white;
+                transition: $transition-base;
+            }
+        }
+    }
+
+    &__bottom {
+        padding: 30px 0;
+        font-size: 14px;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: flex-end;
+        
+        a {
+            color: $color-grey;
+            text-decoration: none;
+        }
+    }
+
+    &__terms {
+        margin-right: 30px;
+    }
+}
