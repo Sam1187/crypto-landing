@@ -1,0 +1,46 @@
+.res-header {
+    padding: 20px 0 117px;
+    background: linear-gradient(152.11deg, #0FB786 0%, #B0DF77 100%);
+
+    &__top {
+        margin-bottom: 115px;
+    }
+
+    &__title {
+        font-weight: 900;
+        color: $color-white;
+    }
+
+    &__link {
+        text-align: right;
+
+        a {
+            color: $color-white;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 6px;
+        font-size: 42px;
+        letter-spacing: 0.06px;
+        color: $color-white;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        line-height: 1.6;
+        color: $color-light-blue;
+    }
+
+    &__desc {
+        position: relative;
+        margin-top: -16px;
+    }
+
+    &__icons {
+        position: absolute;
+        max-width: 400px;
+        right: 50px;
+        top: -98px;
+    }
+}

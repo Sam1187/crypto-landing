@@ -10,7 +10,7 @@ header.header
                         a(href="") Sing in <i class="fas fa-arrow-right arrow-icon"></i>
         .calc
             .row
-                .col-md-6
+                .col-lg-6.col-md-12
                     .calc__desc
                         .calc__subtitle
                             span.calc__new New
@@ -21,30 +21,30 @@ header.header
                             span Catch mouse and gave it as a present chew the plant but scratch me there, elevator butt. Always ensure to lay down in such a manner that tail can lightly brush.
                         .calc__btn
                             a(href="") Create account
-                .col-md-6
-                    .calc__calculator.calculator
+                .col-lg-6.col-md-12
+                    .calc__calculator.calculator#app
                         .calculator__title
                             span The best way to buy and sell cryptocurrency
                         .calculator__currency
-                            .calculator__value $200
+                            .calculator__value 
+                                span 
+                                    input(type="number", v-model.number = 'amount' placeholder = 'Enter Amount')
                             .calculator__select
                                 img.calculator__icon(src="img/usa.png", alt="")
-                                select(name="currency")
-                                    option(value="usd") USD
-                                    option(value="gbr") GBR
-                                    option(value="uah") UAH
+                                select(name="currency" v-model = 'convertfrom')
+                                    option( v-for = '(a, index) in currencyfrom' v-bind:value = 'a.name') {{a.desc}}
+                                    
                         .calculator__result
-                            span For
-                                span 200 USD 
+                            span {{amount}} {{convertfrom}} equals {{finalamount}} {{convertto}}
                                 
                         .calculator__currency
-                            .calculator__value 0.75454
-                            .calculator__select
+                            .calculator__value 
+                                span {{finalamount}}                           
+                                .calculator__select
                                 img.calculator__icon(src="img/BTC.png", alt="")
-                                select(name="coin")
-                                    option(value="btc") BTC
-                                    option(value="ltc") LTC
-                                    option(value="coi") COI
+                                select(name="coin" v-model='convertto')
+                                    option(v-for = '(a, index) in currencyto' v-bind:value = 'a.name') {{a.desc}}
+                                    
                         .calculator__button
                             a(href="" class="calculator__btn") Continue 
                             

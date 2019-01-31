@@ -22,7 +22,7 @@
 
     &__btns {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         padding: 25px 0 0 89px;
     }
 
@@ -84,5 +84,15 @@
 
     &__terms {
         margin-right: 30px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .footer {
+        
+
+        &__btn {
+            font-size: 12px;
+        }
     }
 }
