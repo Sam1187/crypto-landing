@@ -56,3 +56,13 @@
         }
     }
 }
+
+@media all and (max-width: 768px) {
+    .description {
+
+        &__article {
+            padding: 20px 0;
+            margin-left: 0;
+        }
+    }
+}
