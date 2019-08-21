@@ -40,7 +40,7 @@ header.header
                         .calculator__currency
                             .calculator__value 
                                 span {{finalamount}}                           
-                                .calculator__select
+                            .calculator__select
                                 img.calculator__icon(src="img/BTC.png", alt="")
                                 select(name="coin" v-model='convertto')
                                     option(v-for = '(a, index) in currencyto' v-bind:value = 'a.name') {{a.desc}}

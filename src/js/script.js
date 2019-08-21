@@ -58,7 +58,7 @@ $(document).ready(function(){
         mounted: function () {
             var self = this;
             $.ajax({
-                url: 'https://api.myjson.com/bins/leeas',
+                url: 'https://api.myjson.com/bins/169a0g',
                 method: 'GET',
                 success: function (data) {
                     self.currencyfrom = data.currencyfrom;
