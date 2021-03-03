@@ -13,7 +13,7 @@
     "lodash.mergewith": "^4.6.2",
     "lodash.template": "^4.5.0",
     "minimatch": "^3.0.4",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "static-eval": "^2.0.2",
     "tar": "^4.4.10",
     "underscore.string": "^3.3.5"
